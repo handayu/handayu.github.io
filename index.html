@@ -30,7 +30,29 @@
 
 </head>
 
+
+
+
 <body>
+
+    <!--<script>
+        $(document).ready(function () {
+            var $carousel = $('#carouselExampleIndicators');
+            var defaultInterval = $carousel.data('interval'); // 获取默认的轮播间隔时间
+            var specialInterval = 8000; // 特定幻灯片的停留时间（毫秒）
+
+            $carousel.on('slide.bs.carousel', function (e) {
+                var $nextSlide = $(e.relatedTarget);
+                if ($nextSlide.attr('id') === 'special-slide') {
+                    $carousel.carousel('pause');
+                    setTimeout(function () {
+                        $carousel.carousel('cycle');
+                    }, specialInterval);
+                }
+            });
+        });
+    </script>-->
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <!-- Brand -->
@@ -42,7 +64,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -56,7 +78,7 @@
                             <!-- Add more dropdown items here -->
                         </div>
                     </li>
-    
+
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,8 +86,8 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                             <a class="dropdown-item" href="descri.html">合作介绍</a>
-                            <a class="dropdown-item" href="trader.html">平台下载</a>  
-                                                </div>
+                            <a class="dropdown-item" href="trader.html">平台下载</a>
+                        </div>
                     </li>
 
                     <!-- Dropdown -->
@@ -125,12 +147,17 @@
     </nav>  -->
 
     <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
@@ -140,6 +167,15 @@
                         <p></p>
                     </div>
                 </div>
+
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('image/tt.gif'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
                 <!-- Slide Two - Set the background image for this slide in the line below -->
                 <div class="carousel-item" style="background-image: url('image/datu2.png')">
                     <div class="carousel-caption d-none d-md-block">
@@ -148,12 +184,35 @@
                     </div>
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('image/globaltrader.png')">
+                <div class="carousel-item" style="background-image: url('image/datu3.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3></h3>
                         <p></p>
                     </div>
                 </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('image/acc.png'); background-size: contain; background-position: center; background-repeat: no-repeat; ">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('image/client.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('image/tt.gif'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
                 <!-- Slide Three - Set the background image for this slide in the line below -->
                 <div class="carousel-item" style="background-image: url('image/globaltrader.png')">
                     <div class="carousel-caption d-none d-md-block">
@@ -177,16 +236,16 @@
     <div class="container">
 
         <!--  <div class="col-lg-4 mb-4">
-         <div class="card h-100">
-           <h4 class="card-header">OpenSource for Trading Everywhere</h4>
-           <div class="card-body">
-             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-           </div>
-           <div class="card-footer">
-             <a href="#" class="btn btn-primary">更多</a>
-           </div>
-         </div>
-       </div> -->
+          <div class="card h-100">
+            <h4 class="card-header">OpenSource for Trading Everywhere</h4>
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">更多</a>
+            </div>
+          </div>
+        </div> -->
 
         <h1 class="my-4">For Traders</h1>
 
